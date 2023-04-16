@@ -1,0 +1,38 @@
+﻿CREATE TABLE users(
+	id bigint generated always as identity primary key,
+	full_name varchar not null, 
+	username varchar not null unique, 
+	password_hash text not null, 
+	salt text not null,
+	birth_date date
+);
+
+CREATE TABLE titles(
+	id bigint generated always as identity primary key,
+	words_title varchar not null,
+	user_id int references users(id),
+	description text
+);
+
+CREATE TABLE words(
+	id int generated always as identity primary key,
+	word varchar not null,
+	translate_word varchar not null,
+	title_id bigint references titles(id),
+	created_at timestamp default now()
+);
+
+CREATE TABLE games(
+	id bigint generated always as identity primary key,
+	user_id bigint references users(id),
+	title_id bigint references titles(id),
+	correct_answer int,
+	played_at timestamp
+);
+
+CREATE TABLE memorized_words(
+	id int generated always as identity primary key,
+	user_id bigint references users(id),
+	word_id bigint references words (id),
+	memorized_word_date timestamp
+);
