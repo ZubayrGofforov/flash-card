@@ -4,12 +4,6 @@ using flashCards.Desktop.Models;
 using flashCards.Desktop.Repositories;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace flashCards.Desktop
@@ -18,7 +12,7 @@ namespace flashCards.Desktop
     {
         private IList<Title> titles;
         private int index = 0;
-        private string _title; 
+        private string _title;
         public TitleControl()
         {
             InitializeComponent();
@@ -26,7 +20,7 @@ namespace flashCards.Desktop
 
         public string Title
         {
-            get { return _title;  }
+            get { return _title; }
             set { _title = value; titleBttn.Text = value; }
         }
         private async void GetTitleCollection()

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace flashCards.Desktop.Common
 {
@@ -10,14 +6,14 @@ namespace flashCards.Desktop.Common
     {
         public long UserId { get; set; }
 
-        public long TitleId { get; set; }    
+        public long TitleId { get; set; }
 
         private static IdentitySingelton _identitySingelton;
         private IdentitySingelton()
         {
 
         }
-        
+
         public static void BuildInstance(long userId)
         {
             if (_identitySingelton is null)

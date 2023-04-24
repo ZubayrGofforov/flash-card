@@ -1,18 +1,7 @@
 ﻿using flashCards.Desktop.Forms;
 using flashCards.Desktop.Forms.WordForm;
-using flashCards.Desktop.Interfaces.Repositories;
-using flashCards.Desktop.Interfaces.Services;
-using flashCards.Desktop.Repositories;
-using flashCards.Desktop.Sevices;
 using flashCards.Desktop.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace flashCards.Desktop

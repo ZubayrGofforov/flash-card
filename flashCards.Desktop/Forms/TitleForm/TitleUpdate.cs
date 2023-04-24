@@ -3,13 +3,6 @@ using flashCards.Desktop.Interfaces.Repositories;
 using flashCards.Desktop.Models;
 using flashCards.Desktop.Repositories;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace flashCards.Desktop.Forms
@@ -39,7 +32,7 @@ namespace flashCards.Desktop.Forms
 
         private void canelBttn_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm(); 
+            MainForm mainForm = new MainForm();
             mainForm.Show();
             this.Close();
         }

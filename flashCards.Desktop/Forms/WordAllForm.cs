@@ -3,12 +3,8 @@ using flashCards.Desktop.Models;
 using flashCards.Desktop.Repositories;
 using PagedList;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,13 +13,13 @@ namespace flashCards.Desktop.Forms
     public partial class WordAllForm : Form
     {
         private int pageNumber = 1;
-        IPagedList<Word> words; 
+        IPagedList<Word> words;
         public WordAllForm()
         {
             InitializeComponent();
         }
 
-        public async Task<IPagedList<Word>> GetAllWordAsync(int pageNumber = 1, int pageSize = 5) 
+        public async Task<IPagedList<Word>> GetAllWordAsync(int pageNumber = 1, int pageSize = 5)
         {
             IWordRepository wordRepository = new WordRepository();
             var result = await wordRepository.GetAllAsync();

@@ -2,13 +2,6 @@
 using flashCards.Desktop.Interfaces.Repositories;
 using flashCards.Desktop.Repositories;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace flashCards.Desktop.Forms
@@ -37,8 +30,8 @@ namespace flashCards.Desktop.Forms
         {
             IWordRepository wordRepository = new WordRepository();
             var result = wordRepository.GetAllByWordIdAsync(IdentitySingelton.GetInstance().TitleId, 0, 30);
-            
-            
+
+
         }
     }
 }

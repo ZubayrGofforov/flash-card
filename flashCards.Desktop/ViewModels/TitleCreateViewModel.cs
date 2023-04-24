@@ -1,10 +1,6 @@
 ﻿using flashCards.Desktop.Common;
 using flashCards.Desktop.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace flashCards.Desktop.ViewModels
 {

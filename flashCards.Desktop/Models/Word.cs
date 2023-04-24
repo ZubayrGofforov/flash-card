@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace flashCards.Desktop.Models
 {
@@ -14,7 +10,7 @@ namespace flashCards.Desktop.Models
 
         public string TranslateWord { get; set; } = String.Empty;
 
-        public long TitleId { get; set; } 
+        public long TitleId { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }

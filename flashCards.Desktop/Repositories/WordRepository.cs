@@ -1,19 +1,15 @@
 ﻿using flashCards.Desktop.Constans;
 using flashCards.Desktop.Interfaces.Repositories;
 using flashCards.Desktop.Models;
-using Microsoft.VisualBasic.ApplicationServices;
 using Npgsql;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace flashCards.Desktop.Repositories
 {
     public class WordRepository : IWordRepository
     {
-        private readonly NpgsqlConnection _connection = new NpgsqlConnection(DbConstans.DB_CONNECTION_STRING); 
+        private readonly NpgsqlConnection _connection = new NpgsqlConnection(DbConstans.DB_CONNECTION_STRING);
         public async Task<bool> CreateAsync(Word entity)
         {
             try
@@ -103,7 +99,7 @@ namespace flashCards.Desktop.Repositories
                         TitleId = reader.GetInt64(3),
                         CreatedAt = reader.GetDateTime(4)
                     };
-                    
+
                     tasks.Add(task);
                 }
 

@@ -1,15 +1,7 @@
-﻿using flashCards.Desktop.Common;
-using flashCards.Desktop.Interfaces.Repositories;
+﻿using flashCards.Desktop.Interfaces.Repositories;
 using flashCards.Desktop.Models;
 using flashCards.Desktop.Repositories;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace flashCards.Desktop.Forms.WordForm
@@ -28,7 +20,7 @@ namespace flashCards.Desktop.Forms.WordForm
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -52,12 +44,12 @@ namespace flashCards.Desktop.Forms.WordForm
         {
             MainForm mainForm = new MainForm();
             mainForm.Show();
-            this.Close();   
+            this.Close();
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)

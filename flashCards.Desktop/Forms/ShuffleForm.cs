@@ -3,12 +3,6 @@ using flashCards.Desktop.Models;
 using flashCards.Desktop.Repositories;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace flashCards.Desktop.Forms
@@ -28,7 +22,7 @@ namespace flashCards.Desktop.Forms
             IWordRepository wordRepository = new WordRepository();
             var words = await wordRepository.GetAllByWordIdAsync(long.Parse(titleIdTxtBox.Text.ToString()), 0, 30);
 
-         
+
             shuffleLabel.Text = words[currentWord].Word_;
             currentWord++;
         }
@@ -55,7 +49,7 @@ namespace flashCards.Desktop.Forms
         }
         private async void ShuffleForm_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void titleIdTxtBox_TextChanged(object sender, EventArgs e)

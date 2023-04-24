@@ -2,13 +2,6 @@
 using flashCards.Desktop.Sevices;
 using flashCards.Desktop.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace flashCards.Desktop.Forms
@@ -44,24 +37,24 @@ namespace flashCards.Desktop.Forms
 
             if (pnlRegspic.Visible)
             {
-             
+
                 pnlLoginpic.Visible = true;
             }
             if (pnlRegs.Visible)
             {
                 loginPanel.Visible = true;
-              
+
             }
-            
+
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
+
             pnlRegs.Visible = true;
             loginPanel.Visible = false;
             pnlLoginpic.Visible = false;
             pnlRegspic.Visible = true;
-        
+
             //RegisterForm registerForm = new RegisterForm();
             //this.Hide();
             //registerForm.Show();
@@ -97,7 +90,7 @@ namespace flashCards.Desktop.Forms
 
         private void pnlRegs_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void loginPanel_Paint(object sender, PaintEventArgs e)

@@ -5,10 +5,6 @@ using flashCards.Desktop.Models;
 using flashCards.Desktop.Repositories;
 using flashCards.Desktop.Securities;
 using flashCards.Desktop.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace flashCards.Desktop.Sevices
