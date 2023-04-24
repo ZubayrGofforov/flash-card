@@ -16,6 +16,7 @@ namespace flashCards.Desktop.Sevices
         {
             this._userRepository = new UserRepository();
         }
+
         public async Task<(bool IsSuccessful, string Message)> Loginasync(string username, string password)
         {
             var user = await _userRepository.FindByUsername(username);
@@ -25,7 +26,7 @@ namespace flashCards.Desktop.Sevices
             if (hashResult)
             {
                 IdentitySingelton.BuildInstance(user.Id);
-                return (IsSuccessful: true, Message: "");
+                return (IsSuccessful: true, Message: "Successfuly");
             }
             else return (IsSuccessful: false, Message: "Password is wrong!");
         }
@@ -43,7 +44,7 @@ namespace flashCards.Desktop.Sevices
             };
 
             var result = await _userRepository.CreateAsync(user);
-            if (result) return (IsSuccessful: true, Message: "");
+            if (result) return (IsSuccessful: true, Message: "Successfuly");
             else return (IsSuccessful: false, Message: "User can not created!");
         }
     }
