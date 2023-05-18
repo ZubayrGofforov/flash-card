@@ -48,7 +48,6 @@ namespace flashCards.Desktop.Repositories
 
                 if (result == 0) return false;
                 else return true;
-
             }
             catch { return false; }
             finally { await _connection.CloseAsync(); }
